@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import 	android.provider.Browser;
 
 public class MainActivity extends Activity {
     private final static int CAMERA_RESULT = 0;
@@ -120,7 +121,7 @@ public class MainActivity extends Activity {
         }
         Intent intent_main = new Intent(Intent.ACTION_VIEW);
         intent_main.setData(Uri.parse(return_url));
-
+        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");
         //pause(200);
         startActivity(intent_main);
 
