@@ -22,6 +22,9 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import 	android.provider.Browser;
+import java.util.*;
+import org.json.JSONObject;
+import com.google.gson.Gson;
 
 public class MainActivity extends Activity {
     private final static int CAMERA_RESULT = 0;
@@ -116,13 +119,53 @@ public class MainActivity extends Activity {
 
         //開始送字串
         //new SendingPacketTask().execute(send_url);
-        if (myURI.getQueryParameter("returnurl")==null){
+        /*//?if (myURI.getQueryParameter("returnurl")==null){
             return_url = "http://" + myURI.toString().substring(21) + "?code=" + code;
-        }
+        }*/
         Intent intent_main = new Intent(Intent.ACTION_VIEW);
-        intent_main.setData(Uri.parse(return_url));
-        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");
+        //?intent_main.setData(Uri.parse(return_url));
+        intent_main.setData(Uri.parse("http://192.168.65.66/erpweb/testbarcodeapp/"));
+        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //設定使用原分頁開啟新網頁
         //pause(200);
+
+        //--------- 傳送 json data ----------
+        final String barcode = code;
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    URL url = new URL("http://192.168.65.66/erpweb/testbarcodeapp/setbarcode.php");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setRequestMethod("POST");
+                    conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
+                    conn.setRequestProperty("Accept","application/json");
+                    conn.setDoOutput(true);
+                    conn.setDoInput(true);
+
+                    JSONObject jsonParam = new JSONObject();
+                    jsonParam.put("code", barcode);
+
+
+                    Log.i("JSON", jsonParam.toString());
+                    DataOutputStream os = new DataOutputStream(conn.getOutputStream());
+                    os.writeBytes(jsonParam.toString());
+
+                    os.flush();
+                    os.close();
+
+                    Log.i("STATUS", String.valueOf(conn.getResponseCode()));
+                    Log.i("MSG" , conn.getResponseMessage());
+
+                    conn.disconnect();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();
+
+        // 開啟網頁
         startActivity(intent_main);
 
     }
