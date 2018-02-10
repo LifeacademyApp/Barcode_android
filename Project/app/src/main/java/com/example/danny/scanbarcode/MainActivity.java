@@ -24,7 +24,6 @@ import com.google.zxing.integration.android.IntentResult;
 import 	android.provider.Browser;
 import java.util.*;
 import org.json.JSONObject;
-import com.google.gson.Gson;
 
 public class MainActivity extends Activity {
     private final static int CAMERA_RESULT = 0;
@@ -70,8 +69,10 @@ public class MainActivity extends Activity {
         integrator.setCameraId(0);
         integrator.setBeepEnabled(false);
         integrator.setBarcodeImageEnabled(false);
+        integrator.setCaptureActivity(AnyOrientationCaptureActivity.class);
         integrator.setOrientationLocked(false);
         integrator.initiateScan();
+
 
     }
     private boolean hasPermission(String[] permission) {
@@ -218,6 +219,7 @@ public class MainActivity extends Activity {
         }, mSec);
     }
 
+    //? 掃描結果會被傳到這個 function
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(result != null) {  //假如有收到掃描結果資料
