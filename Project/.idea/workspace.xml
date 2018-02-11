@@ -8,6 +8,7 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a719e6d-3862-4239-96dd-0d3f5edba88a" name="Default" comment="" />
@@ -56,35 +57,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="66" column="77" lean-forward="true" selection-start-line="66" selection-start-column="77" selection-end-line="66" selection-end-column="77" />
+            <state relative-caret-position="501">
+              <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#4744#6016#0" expanded="true" />
-                <element signature="e#6015#6016#0" expanded="true" />
-                <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#6393#6394#0" expanded="true" />
-                <element signature="e#6444#6445#0" expanded="true" />
-                <element signature="e#6523#6524#0" expanded="true" />
-                <element signature="e#6577#6578#0" expanded="true" />
-                <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#3823#4886#0" expanded="true" />
+                <element signature="e#4885#4886#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnyOrientationCaptureActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnyOrientationCaptureActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -103,8 +101,8 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            <state relative-caret-position="336">
+              <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="e#638#1383#0" expanded="false" />
                 <element signature="e#748#939#0" expanded="false" />
@@ -139,6 +137,12 @@
       <find>Zxing</find>
       <find>setCaptureActivity</find>
       <find>CaptureActivity</find>
+      <find>ZXING_SCAN</find>
+      <find>get_url</find>
+      <find>execute</find>
+      <find>掃描結果</find>
+      <find>SendingPacketTask</find>
+      <find>pause</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -1734,8 +1738,8 @@
         <option value="$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/widget/Toast.class" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1933,7 +1937,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518258407425" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518335609291" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -1980,7 +1984,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518258407425" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518335609291" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2162,7 +2166,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518258407426" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518335609294" />
       </method>
     </configuration>
     <list size="1">
@@ -2257,7 +2261,7 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13464448" sideWeight="0.506135" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26398212" sideWeight="0.22432762" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.81208056" sideWeight="0.7756724" order="9" side_tool="false" content_ui="tabs" x="1032" y="333" width="74" height="42" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.81208056" sideWeight="0.7756724" order="9" side_tool="false" content_ui="tabs" x="16" y="417" width="1298" height="652" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find Sample Code" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37269938" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2304,7 +2308,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2360,17 +2364,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2426,17 +2427,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2460,17 +2458,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2494,17 +2489,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2528,17 +2520,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2562,17 +2551,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2596,17 +2582,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2630,17 +2613,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2664,17 +2644,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2698,17 +2675,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2732,17 +2706,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2766,17 +2737,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2800,17 +2768,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2834,17 +2799,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2868,17 +2830,14 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2967,8 +2926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="336">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="e#638#1383#0" expanded="false" />
             <element signature="e#748#939#0" expanded="false" />
@@ -2980,33 +2939,30 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="66" column="77" lean-forward="true" selection-start-line="66" selection-start-column="77" selection-end-line="66" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#sendResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#4744#6016#0" expanded="true" />
-            <element signature="e#6015#6016#0" expanded="true" />
-            <element signature="class#SendingPacketTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="true" />
-            <element signature="e#6444#6445#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="method#request#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#pause#0;class#MainActivity#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="501">
+          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3823#4886#0" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

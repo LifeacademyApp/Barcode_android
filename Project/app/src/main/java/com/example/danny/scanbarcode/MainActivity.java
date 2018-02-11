@@ -9,6 +9,7 @@ import android.app.Activity;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import android.content.Intent;
+import android.support.annotation.MainThread;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.os.Handler;
@@ -22,6 +23,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import 	android.provider.Browser;
+import 	android.os.Looper;
 import java.util.*;
 import org.json.JSONObject;
 
@@ -108,57 +110,33 @@ public class MainActivity extends Activity {
     public void sendResult(String code) {
         Intent tIntent = this.getIntent();         //取得Schema，值為：usccbarcode
         Uri myURI = tIntent.getData();            //取得URL的URI
-        String tValue = myURI.getQueryParameter("returnurl");    //取得URL中的Query String參數
-        //String[] get_url=myURI.toString().split("=");
-        //String send_url = "http://" + get_url[0].substring(21) + "=" + code;
-        //String send_url = "http://mmm.lifeacademy.org/erpweb/Home/PutScanCode?code=" + code;
-        String return_url = "http://" + tValue + "?code=" + code;
-        //String return_url = "http://www.yahoo.com.tw";
-
-        // /Toast.makeText(this, myURI.toString() ,Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, return_url ,Toast.LENGTH_SHORT).show();
-
+        final String call_url = myURI.getQueryParameter("callurl");    //取得URL中的Query String參數
+        final String sendcode_url = myURI.getQueryParameter("returnurl") + "&code=" + code;    //取得URL中的 returnurl 值
+        
         //開始送字串
-        //new SendingPacketTask().execute(send_url);
-        /*//?if (myURI.getQueryParameter("returnurl")==null){
-            return_url = "http://" + myURI.toString().substring(21) + "?code=" + code;
-        }*/
-        Intent intent_main = new Intent(Intent.ACTION_VIEW);
-        //?intent_main.setData(Uri.parse(return_url));
-        intent_main.setData(Uri.parse("http://192.168.65.66/erpweb/testbarcodeapp/"));
-        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //設定使用原分頁開啟新網頁
-        //pause(200);
-
-        //--------- 傳送 json data ----------
-        final String barcode = code;
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
-                    URL url = new URL("http://192.168.65.66/erpweb/testbarcodeapp/setbarcode.php");
-                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                    conn.setRequestMethod("POST");
-                    conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
-                    conn.setRequestProperty("Accept","application/json");
-                    conn.setDoOutput(true);
-                    conn.setDoInput(true);
+                try{
 
-                    JSONObject jsonParam = new JSONObject();
-                    jsonParam.put("code", barcode);
+                    URL url = new URL(sendcode_url);
+                    HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                    connection.setReadTimeout(0); //?
+                    connection.setConnectTimeout(0); //?
+                    connection.setRequestMethod("GET");
+                    int responseCode = connection.getResponseCode();
 
-
-                    Log.i("JSON", jsonParam.toString());
-                    DataOutputStream os = new DataOutputStream(conn.getOutputStream());
-                    os.writeBytes(jsonParam.toString());
-
-                    os.flush();
-                    os.close();
-
-                    Log.i("STATUS", String.valueOf(conn.getResponseCode()));
-                    Log.i("MSG" , conn.getResponseMessage());
-
-                    conn.disconnect();
-                } catch (Exception e) {
+                    if (responseCode == 200) {
+                        Looper.prepare();
+                        Toast.makeText(MainActivity.this,"條碼傳送成功",Toast.LENGTH_SHORT).show();
+                        Looper.loop();
+                    } else {
+                        Looper.prepare();
+                        Toast.makeText(MainActivity.this,"條碼傳送失敗",Toast.LENGTH_SHORT).show();
+                        Looper.loop();
+                    }
+                }
+                catch (IOException e) {
                     e.printStackTrace();
                 }
             }
@@ -166,60 +144,24 @@ public class MainActivity extends Activity {
 
         thread.start();
 
+
+        try{
+            // delay 200 milisecond
+            Thread.sleep(200);
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
+        Intent intent_main = new Intent(Intent.ACTION_VIEW);
+        intent_main.setData(Uri.parse(call_url));
+        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //設定使用原分頁開啟新網頁
         // 開啟網頁
         startActivity(intent_main);
 
     }
 
-    class SendingPacketTask extends AsyncTask<String, Integer, Integer>{
-        @Override
-        protected Integer doInBackground(String... param) {
-            request(param[0]);
-            return null;
-        }
-        @Override
-        protected void onPostExecute(Integer result) {
-            super.onPostExecute(result);
-        }
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-        }
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-    }
 
-    private void request(String urlString) {
-        try{
-            URL url = new URL(urlString);
-            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-            connection.setReadTimeout(0);
-            connection.setConnectTimeout(0);
-            connection.setRequestMethod("GET");
-            int responseCode = connection.getResponseCode();
-            if (responseCode == 200) {
-                int code = 200;
-            } else {
-                //Toast.makeText(this, "Failure" ,Toast.LENGTH_SHORT).show();
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-       }
-    }
-
-
-    public void pause(int mSec) {
-        Handler mHandler = new Handler();
-        mHandler.postDelayed(new Runnable() {
-            public void run() {
-            }
-        }, mSec);
-    }
-
-    //? 掃描結果會被傳到這個 function
+    // 掃描結果會被傳到這個 function
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(result != null) {  //假如有收到掃描結果資料
