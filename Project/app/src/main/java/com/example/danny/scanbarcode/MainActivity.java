@@ -2,6 +2,7 @@ package com.example.danny.scanbarcode;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.content.ActivityNotFoundException;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,12 +10,9 @@ import android.app.Activity;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import android.content.Intent;
-import android.support.annotation.MainThread;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
-import android.os.Handler;
 import java.io.*;
-import android.os.AsyncTask;
 
 
 import android.net.Uri;
@@ -24,8 +22,6 @@ import com.google.zxing.integration.android.IntentResult;
 
 import 	android.provider.Browser;
 import 	android.os.Looper;
-import java.util.*;
-import org.json.JSONObject;
 
 public class MainActivity extends Activity {
     private final static int CAMERA_RESULT = 0;
@@ -36,7 +32,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         callCamera();
-
     }
     public void callCamera(){
         String[] permissionNeed = {
@@ -57,14 +52,12 @@ public class MainActivity extends Activity {
             };
             if (shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)) {
                 Toast.makeText(this, "需要相機權限掃描條碼", Toast.LENGTH_SHORT).show();
-
             }
             requestPermissions(permissionNeed, CAMERA_RESULT);
         }
     }
 
     public void Scanner(){
-
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
         integrator.setPrompt("請對準條碼");
@@ -74,15 +67,11 @@ public class MainActivity extends Activity {
         integrator.setCaptureActivity(AnyOrientationCaptureActivity.class);
         integrator.setOrientationLocked(false);
         integrator.initiateScan();
-
-
     }
     private boolean hasPermission(String[] permission) {
         if (canMakeSmores()) {
             for (String permissions : permission) {
-
                 return (ContextCompat.checkSelfPermission(this, permissions) == PackageManager.PERMISSION_GRANTED);
-
             }
         }
         return true;
@@ -94,12 +83,9 @@ public class MainActivity extends Activity {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     Scanner();
                 } else {
-
                     Toast.makeText(this,"需要相機權限掃描條碼",Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-
             default:
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }}
@@ -112,13 +98,12 @@ public class MainActivity extends Activity {
         Uri myURI = tIntent.getData();            //取得URL的URI
         final String call_url = myURI.getQueryParameter("callurl");    //取得URL中的Query String參數
         final String sendcode_url = myURI.getQueryParameter("returnurl") + "&code=" + code;    //取得URL中的 returnurl 值
-        
+
         //開始送字串
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try{
-
                     URL url = new URL(sendcode_url);
                     HttpURLConnection connection = (HttpURLConnection)url.openConnection();
                     connection.setReadTimeout(0); //?
@@ -144,20 +129,26 @@ public class MainActivity extends Activity {
 
         thread.start();
 
-
         try{
-            // delay 200 milisecond
+            // delay 200 milisecond for finishing sending barcode
             Thread.sleep(200);
         } catch(InterruptedException e){
             e.printStackTrace();
         }
 
         Intent intent_main = new Intent(Intent.ACTION_VIEW);
+        intent_main.setPackage("com.android.chrome");         // 指定開啟 chrome
         intent_main.setData(Uri.parse(call_url));
-        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //設定使用原分頁開啟新網頁
-        // 開啟網頁
-        startActivity(intent_main);
+        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //重複使用同一分頁
 
+        // 開啟網頁
+        try{
+            startActivity(intent_main);
+        }catch (ActivityNotFoundException ex){
+            //如果手機裡沒有裝 chrome，就會改用 default browser 開啟
+            intent_main.setPackage(null);
+            startActivity(intent_main);
+        }
     }
 
 
@@ -168,15 +159,17 @@ public class MainActivity extends Activity {
             if(result.getContents() == null) {   //假如是空的資料
                 Log.d("MainActivity", "Cancelled scan");   //紀錄掃描失敗
                 Toast.makeText(this, "取消", Toast.LENGTH_LONG).show();  //顯示"取消"
+                this.finish();
             } else {   //假如掃瞄有成功
                 Log.d("MainActivity", "Scanned");  //紀錄掃描成功
                 Toast.makeText(this, "掃描結果: " + result.getContents(), Toast.LENGTH_LONG).show();   //顯示掃描出的條碼內容
-                if (this.getIntent().getDataString() != null) {
+
+                if (this.getIntent().getDataString() != null) { //this.getIntent().getDataString() : usccbarcodescanner://?callurl=http://mmm.lifeacademy.org/erpweb/testbarcodeapp&returnurl=http://mmm.lifeacademy.org/erpweb/Scancode/PutScanCode?username=
                     sendResult(result.getContents()); //送條碼資料到伺服器
                     this.finish();
                 }
                 else {
-                    Toast.makeText(this, "請從網頁開啟本程式", Toast.LENGTH_LONG).show();  //顯示"取消"
+                    Toast.makeText(this, "請從網頁開啟本程式", Toast.LENGTH_LONG).show();
                     this.finish();
                 }
             }
@@ -185,5 +178,4 @@ public class MainActivity extends Activity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
-
 }

@@ -19,11 +19,7 @@ android {
     }
     useLibrary 'org.apache.http.legacy'
 }
-// Added by raj
-repositories {
-    jcenter()
-}
-// Added by raj ends
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
