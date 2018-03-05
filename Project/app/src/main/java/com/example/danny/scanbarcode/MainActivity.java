@@ -148,6 +148,7 @@ public class MainActivity extends Activity {
             //如果手機裡沒有裝 chrome，就會改用 default browser 開啟
             intent_main.setPackage(null);
             startActivity(intent_main);
+            Toast.makeText(MainActivity.this,"建議下載 chrome，可避免產生多餘分頁",Toast.LENGTH_SHORT).show();
         }
     }
 
