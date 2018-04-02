@@ -1,5 +1,6 @@
 # Barcode_android
 lifeacademy app for barcode (android version)
 
-## The way of open 
-Open existing project with android studio and select project directory
+## The first step when get this project
+- rebuild the project 
+  - Android Studio : Build -> Rebuild Project 
