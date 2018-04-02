@@ -23,10 +23,16 @@ import com.google.zxing.integration.android.IntentResult;
 import 	android.provider.Browser;
 import 	android.os.Looper;
 
+/*
+* 說明 :
+* 1. 由網頁 A 開啟 app
+* 2. 開啟掃描程序
+* 3. 掃到條碼後，將條碼送至資料庫
+* 4. 返回原呼叫網頁 A
+* */
+
 public class MainActivity extends Activity {
     private final static int CAMERA_RESULT = 0;
-    private static final int ZXING_SCAN = 3;
-    private String Content;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,21 +99,28 @@ public class MainActivity extends Activity {
         return(Build.VERSION.SDK_INT> Build.VERSION_CODES.LOLLIPOP_MR1);
     }
 
-    public void sendResult(String code) {
-        Intent tIntent = this.getIntent();         //取得Schema，值為：usccbarcode
-        Uri myURI = tIntent.getData();            //取得URL的URI
-        final String call_url = myURI.getQueryParameter("callurl");    //取得URL中的Query String參數
-        final String sendcode_url = myURI.getQueryParameter("returnurl") + "&code=" + code;    //取得URL中的 returnurl 值
+    public void sendBarcode_returnWebPage(String code) {
+        // 取得網頁送過來的資料
+        Intent tIntent = this.getIntent();
 
-        //開始送字串
+        // 取得 URL 的 URI
+        Uri myURI = tIntent.getData();
+
+        // 取得呼叫網頁網址
+        final String call_url = myURI.getQueryParameter("callurl");
+
+        // 設定資料庫網址及條碼
+        final String sendcode_url = myURI.getQueryParameter("returnurl") + "&code=" + code;
+
+    // ---- 傳送條碼至資料庫 ----- //
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try{
                     URL url = new URL(sendcode_url);
                     HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-                    connection.setReadTimeout(0); //?
-                    connection.setConnectTimeout(0); //?
+                    connection.setReadTimeout(0);
+                    connection.setConnectTimeout(0);
                     connection.setRequestMethod("GET");
                     int responseCode = connection.getResponseCode();
 
@@ -126,26 +139,32 @@ public class MainActivity extends Activity {
                 }
             }
         });
-
         thread.start();
 
+
+        // delay 200 milisecond for finishing sending barcode
         try{
-            // delay 200 milisecond for finishing sending barcode
+
             Thread.sleep(200);
         } catch(InterruptedException e){
             e.printStackTrace();
         }
 
+    // ---- 返回呼叫網頁 ---- //
         Intent intent_main = new Intent(Intent.ACTION_VIEW);
-        intent_main.setPackage("com.android.chrome");         // 指定開啟 chrome
+
+        // 指定使用 chrome 開啟
+        intent_main.setPackage("com.android.chrome");
         intent_main.setData(Uri.parse(call_url));
-        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");      //重複使用同一分頁
+
+        // 放入 EXTRA_APPLICATION_ID ，以重複使用同一分頁
+        intent_main.putExtra(Browser.EXTRA_APPLICATION_ID, "com.android.chrome");
 
         // 開啟網頁
         try{
             startActivity(intent_main);
         }catch (ActivityNotFoundException ex){
-            //如果手機裡沒有裝 chrome，就會改用 default browser 開啟
+            // 手機沒有 chrome 的時候，改用 default browser 開啟 => package 設為 null
             intent_main.setPackage(null);
             startActivity(intent_main);
             Toast.makeText(MainActivity.this,"建議下載 chrome，可避免產生多餘分頁",Toast.LENGTH_SHORT).show();
@@ -153,20 +172,21 @@ public class MainActivity extends Activity {
     }
 
 
-    // 掃描結果會被傳到這個 function
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if(result != null) {  //假如有收到掃描結果資料
-            if(result.getContents() == null) {   //假如是空的資料
-                Log.d("MainActivity", "Cancelled scan");   //紀錄掃描失敗
-                Toast.makeText(this, "取消", Toast.LENGTH_LONG).show();  //顯示"取消"
+        if(result != null) {
+            if(result.getContents() == null) {
+                Log.d("MainActivity", "Cancelled scan");
                 this.finish();
-            } else {   //假如掃瞄有成功
-                Log.d("MainActivity", "Scanned");  //紀錄掃描成功
-                Toast.makeText(this, "掃描結果: " + result.getContents(), Toast.LENGTH_LONG).show();   //顯示掃描出的條碼內容
+            } else {
+                Log.d("MainActivity", "Scanned");
+                Toast.makeText(this, "掃描結果: " + result.getContents(), Toast.LENGTH_LONG ).show();   // 顯示條碼
 
-                if (this.getIntent().getDataString() != null) { //this.getIntent().getDataString() : usccbarcodescanner://?callurl=http://mmm.lifeacademy.org/erpweb/testbarcodeapp&returnurl=http://mmm.lifeacademy.org/erpweb/Scancode/PutScanCode?username=
-                    sendResult(result.getContents()); //送條碼資料到伺服器
+                if (this.getIntent().getDataString() != null) {
+                    //this.getIntent().getDataString() : usccbarcodescanner://?callurl=http://mmm.lifeacademy.org/erpweb/testbarcodeapp&returnurl=http://mmm.lifeacademy.org/erpweb/Scancode/PutScanCode?username=
+
+                    sendBarcode_returnWebPage(result.getContents());
                     this.finish();
                 }
                 else {

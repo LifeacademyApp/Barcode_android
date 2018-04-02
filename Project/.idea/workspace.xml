@@ -57,24 +57,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="150" column="63" lean-forward="false" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
+            <state relative-caret-position="252">
+              <caret line="181" column="20" lean-forward="false" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#3705#4767#0" expanded="true" />
-                <element signature="e#4766#4767#0" expanded="true" />
-                <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#3724#4778#0" expanded="true" />
+                <element signature="e#4777#4778#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnyOrientationCaptureActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,10 +103,25 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="651">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+              <folding>
+                <element signature="e#638#1383#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
@@ -99,16 +135,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -118,6 +154,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -142,12 +179,17 @@
       <find>IntentIntegrator</find>
       <find>取消</find>
       <find>getIntent</find>
+      <find>call_url</find>
+      <find>sendResult</find>
     </findStrings>
+    <replaceStrings>
+      <replace>sendBarcode_returnWebPage</replace>
+    </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\Alger\.gradle\wrapper\dists\gradle-4.1-all\bzyivzo6n839fup2jbap0tjew\gradle-4.1" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Yolo\.gradle\wrapper\dists\gradle-4.1-all\bzyivzo6n839fup2jbap0tjew\gradle-4.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1735,18 +1777,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/widget/Toast.class" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/cell_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -1763,8 +1807,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1777,18 +1820,112 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scanbarcode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="7d8fe39" />
+    <property name="device.picker.selection" value="42826037" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="android.profiler.active" value="true" />
     <property name="ToolWindowFind.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AndroidPractice/AndroidPractice" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -1880,8 +2017,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520240125883" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522676214139" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -1928,8 +2064,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520240125883" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522676214139" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2089,10 +2224,7 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520240125884" />
-      </method>
+      <method />
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android App.app" />
@@ -2180,15 +2312,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24079755" sideWeight="0.49626866" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.014752371" sideWeight="0.49626866" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13464448" sideWeight="0.506135" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13464448" sideWeight="0.506135" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26398212" sideWeight="0.22432762" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
@@ -2199,13 +2331,13 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17748918" sideWeight="0.50373137" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062027" sideWeight="0.49386504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13796791" sideWeight="0.49386504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.49092284" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2217,6 +2349,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2238,31 +2371,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/widget/Toast.class" />
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2272,16 +2385,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2314,10 +2425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2327,16 +2434,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2345,10 +2450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2358,16 +2459,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2376,10 +2475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2389,16 +2484,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2407,10 +2500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2420,16 +2509,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2438,10 +2525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2451,16 +2534,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2469,10 +2550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2482,16 +2559,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2500,10 +2575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2513,16 +2584,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2531,10 +2600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2544,16 +2609,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2562,10 +2625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2575,16 +2634,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2593,10 +2650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2606,16 +2659,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2624,10 +2675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2637,16 +2684,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2655,10 +2700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2668,16 +2709,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2686,10 +2725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2699,16 +2734,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2717,10 +2750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2730,16 +2759,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2756,49 +2783,7 @@
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/Manifest.class" />
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/app/Activity.class" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.journeyapps/zxing-android-embedded/3.2.0/654ff6a321869736de94c3fcd9c9a14184f61a3c/zxing-android-embedded-3.2.0-sources.jar!/com/google/zxing/integration/android/IntentIntegrator.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/os/Handler.class" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#748#939#0" expanded="false" />
-            <element signature="e#952#1363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2809,29 +2794,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="651">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="e#638#1383#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cell_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="150" column="63" lean-forward="false" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
+        <state relative-caret-position="252">
+          <caret line="181" column="20" lean-forward="false" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callCamera#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#Scanner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#hasPermission#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
             <element signature="method#canMakeSmores#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3705#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3724#4778#0" expanded="true" />
+            <element signature="e#4777#4778#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/danny/scanbarcode/AnyOrientationCaptureActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
